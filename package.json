@@ -13,6 +13,7 @@
   "author": "Shane Thompson",
   "license": "ISC",
   "devDependencies": {
+    "@rollup/plugin-json": "^6.0.0",
     "eslint": "^8.26.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
