@@ -4,10 +4,9 @@ import json  from "@rollup/plugin-json";
 
 export default defineConfig({
   root: "src/",
-  assetsInclude: ["/json/*.json"],
   build: {
     outDir: "../dist",
-
+    copyPublicDir:true,
 
     rollupOptions: {
         input: {
