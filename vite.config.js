@@ -1,13 +1,10 @@
 import { resolve } from "path";
 import { defineConfig } from "vite";
-import json  from "@rollup/plugin-json";
 
 export default defineConfig({
   root: "src/",
   build: {
     outDir: "../dist",
-    copyPublicDir:true,
-
     rollupOptions: {
         input: {
           main: resolve(__dirname, "src/index.html"),
@@ -17,10 +14,6 @@ export default defineConfig({
           product2: resolve(__dirname, "src/product_pages/marmot-ajax-3.html"),
           product3: resolve(__dirname, "src/product_pages/northface-alpine-3.html"),
           product4: resolve(__dirname,"src/product_pages/northface-talus-4.html"), 
-        },
-        output: {
-          chunkFileNames: "assets/[name].mjs",
-          entryFileNames: "assets/[name].js"
         },
     },
   },
