@@ -7,8 +7,8 @@ export default defineConfig({
   assetsInclude: ["/json/*.json"],
   build: {
     outDir: "../dist",
-    minify : false,
-    preserveModules : true,
+
+
     rollupOptions: {
         input: {
           main: resolve(__dirname, "src/index.html"),
@@ -20,8 +20,6 @@ export default defineConfig({
           product4: resolve(__dirname,"src/product_pages/northface-talus-4.html"), 
         },
         output: {
-          
-       
           chunkFileNames: "assets/[name].mjs",
           entryFileNames: "assets/[name].js"
         },
