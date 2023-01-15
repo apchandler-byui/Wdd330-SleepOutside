@@ -6,6 +6,7 @@ export default defineConfig({
 
   build: {
     outDir: "../dist",
+    minify : false,
     rollupOptions: {
       input: {
         main: resolve(__dirname, "src/index.html"),
